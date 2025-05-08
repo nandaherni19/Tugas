@@ -3,12 +3,12 @@
     $y = 10;
        
     // Arithmetic operators
-    echo "Penambahan " . $x + $y . "<br>";
-    echo "Pengurangan " . $x - $y . "<br>";
-    echo "Perkalian " . $x * $y . "<br>";
-    echo "Pembagian " . $x / $y . "<br>";
-    echo "Modulus " . $x % $y . "<br>";
-    echo "Eksponensial " . $x ** $y . "<br>";
+    echo "Penambahan " . ($x + $y) . "<br>";
+    echo "Pengurangan " . ($x - $y) . "<br>";
+    echo "Perkalian " . ($x * $y) . "<br>";
+    echo "Pembagian " . ($x / $y) . "<br>";
+    echo "Modulus " . ($x % $y) . "<br>";
+    echo "Eksponensial " . ($x ** $y) . "<br>";
     echo("<br>");
        
     // Assignment operators
@@ -39,12 +39,12 @@
        
     // variable $color diisi dengan "red" jika $color tidak ada atau null
     echo $color = $color ?? "red";
-?>
-    <!-- Apa perbedaan $x++ dan ++$x ??
 
-$x++ = Post-Increment ➔ Nilai awal dipakai dulu, baru kemudian ditambahkan 1.
-++$x = Pre-Increment ➔ Nilai langsung ditambahkan 1 dulu, baru dipakai.
-contoh :
-$x = 5;
-echo $x++; // Hasil: 5, lalu x jadi 6
-echo ++$x; // Hasil: 7 (karena x sudah ditambah duluan) -->
+    echo "<h3>Perbedaan \$x++ dan ++\$x</h3>";
+    echo "<p><strong>\$x++</strong> disebut <em>post-increment</em>, 
+    yaitu operator penambahan satu yang dilakukan <strong>setelah</strong> nilai 
+    variabel digunakan dalam ekspresi. Artinya, nilai variabel ditampilkan atau digunakan 
+    terlebih dahulu, baru kemudian variabel ditambah 1. Sebagai contoh, jika \$x = 5, 
+    maka echo \$x++ akan menampilkan 5, dan setelah itu nilai \$x akan menjadi 6.</p>";
+
+?>

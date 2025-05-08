@@ -12,6 +12,6 @@
     echo $x + $y;
 
     //PHP konstanta
-    define("nama_konstanta", "{Raditya Alfareza}");
+    define("nama_konstanta", "{Nanda Herni}");
     echo "<br>".nama_konstanta;
 ?>
