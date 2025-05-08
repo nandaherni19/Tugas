@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #8B0000; 
+      padding: 15px 0;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar ul li {
+      position: relative;
+      margin: 0 15px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 5px;
+    }
+    .navbar ul li a:hover {
+      background-color: #ADFF2F; 
+      color: black;
+    }
+    .navbar ul li ul {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      min-width: 120px;
+      z-index: 100;
+    }
+    .navbar ul li ul li {
+      margin: 0;
+    }
+    .navbar ul li ul li:hover {
+      background-color: #eee;
+    }
+    .navbar ul li ul li {
+      padding: 8px 15px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a>
+        <ul>
+          <li>About 1</li>
+          <li>About 2</li>
+          <li>About 3</li>
+        </ul>
+      </li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Contact</a>
+        <ul>
+          <li>Menu 1</li>
+          <li>Menu 2</li>
+          <li>Menu 3</li>
+        </ul>
+      </li>
+      <li><a href="#">Service</a></li>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $(".navbar li").hover(
+        function () {
+          $(this).find("ul").stop(true, true).slideDown("normal");
+        },
+        function () {
+          $(this).find("ul").stop(true, true).slideUp("normal");
+        }
+      );
+    });
+  </script>
+</body>
+</html>

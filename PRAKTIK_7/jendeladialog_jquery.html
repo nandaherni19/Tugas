@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jendela Basic Dialog jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #tombol{
+            background-color: green;
+            color: white;
+            padding: 7px;
+            border-radius: 5px;
+            border: 2px solid green;
+        }
+        #modal{
+            background-color: aliceblue;
+            position: relative;
+            width: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none;
+        }
+        #close-button{
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            width: 25px;
+            height: 25px;
+            font-weight: bold;
+            float: right;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="tombol">Klik Ini</button>
+    <div id="modal">
+        <div id="close">
+            <div id="close-button">x</div>
+        </div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quidem odio illo placeat illum necessitatibus quo, inventore cumque blanditiis dolorum, 
+        cupiditate doloribus doloremque minus magnam veritatis alias neque voluptas saepe pariatur!
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#tombol").click(function(){
+                $("#modal").show(1000);
+            })
+            $("#close-button").click(function(){
+                $("#modal").hide(1000);
+            })
+        })
+    </script>
+</body>
+</html>

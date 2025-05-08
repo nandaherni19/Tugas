@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengakses Objek Password</title>
+</head>
+<body>
+    <FORM NAME = "formTes"
+          ACTION = "testform.htm"
+          METHOD = "Post">
+    <PRE>
+        Password Pengganti    : <INPUT TYPE = "PASSWORD"
+        NAME = "password_1">
+        Passwowrd Sekali Lagi : <INPUT TYPE = "PASSWORD"
+        NAME = "password_2">
+    </PRE>
+<INPUT TYPE = "BUTTON"
+        NAME = "tombolProses"
+        VALUE = "Proses"
+        onclick="cekPassword()">
+    </FORM> 
+    <SCRIPT LANGUAGE = "javascript">
+        function cekPassword(){
+            if (document.formTes.password_1.value !=
+                document.formTes.password_2.value)
+                alert("Dua password yang Anda masukkan tidak sama");
+                else
+                window.location.href = "tesform.htm";
+        }
+    </SCRIPT>
+</body>
+</html>
