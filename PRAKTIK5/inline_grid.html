@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>
+        belajar css grid box
+    </title>
+    <style>
+        .tempat_grid {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding: 10px;
+        }
+        .item_grid{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <h1>tampilan:</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div> kesimpulan kode <br>
+            skenario 1 : Kode ini menggunakan CSS Grid Layout untuk menata elemen dalam bentuk grid. Dengan properti display: grid dan grid-template-columns: auto auto auto, elemen-elemen .item_grid ditampilkan dalam 3 kolom dengan lebar otomatis sesuai konten. Total ada 9 item yang otomatis tersusun menjadi 3 baris dan 3 kolom. Warna latar belakang biru digunakan pada wadah utama (.tempat_grid), sementara setiap item diberi warna latar putih transparan dan dibatasi garis agar terlihat seperti kotak-kotak. Layout ini mempermudah penataan elemen dalam bentuk grid yang rapi, fleksibel, dan konsisten tanpa perlu pengaturan posisi manual. <br>
+            skenario 2 : Setelah `display: grid` diganti menjadi `inline-grid`, tampilan grid tetap terlihat sama, namun perilaku elemen berubah. `.tempat_grid` sekarang bertindak sebagai elemen inline, yang berarti lebarnya hanya akan mengikuti isi grid, bukan memenuhi seluruh baris seperti `block`. Hal ini bisa bermanfaat saat ingin meletakkan grid dalam satu baris dengan elemen lain (inline), misalnya untuk elemen kecil dalam teks atau di dalam layout yang lebih kompleks. Namun, untuk layout utama yang memerlukan lebar penuh, `grid` lebih direkomendasikan dibanding `inline-grid`.<br>
+            skenario 3 :
+        </div>
+    </div>
+</body>
+</html>

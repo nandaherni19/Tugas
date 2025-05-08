@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajjar flexbox</title>
+    <style>
+        .wadah_flex{
+            /* menjadi flexbox dengan mengatur property display dengan nilai flex. */
+            display: flex;
+            background-color: aquamarine;
+            /* flex-flow: row nowrap; */
+            /* flex-flow digunakan untuk menggabungkan flex-direction dan flex-wrap */
+            justify-content: end;
+        }
+        .wadah_flex>div{
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 100px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+    <p>
+        kesimpulan skenario 1 adalah display:flex akan membuat elemen anak tampil secara bersejajar menjadi container flex dan ditambahkan dengan beckground color memberikar warna pada container fles=x tersebut.<br>
+        kesimpulan skenario 2 adalah setiap anak bisa diberikan style khusus, seperti margin, dan font-size.<br>
+        kesimpulan skenario 3 adalah flex-direction digunakan untuk mengatur arah susunan elemen, baik secra vertikal maupun horizontal dan secra normal aau terbalik.<br>
+        1. row menampilkan arah susuan horizontal dari kiri kekanan (normal).<br>
+        2. row-reverse menampilkan arah susunan horizontal dari kanan ke kiri (terbalik).<br>
+        3. column menampilkanarah susunan vertikal dari atas ke bawah (normal).<br>
+        4. column-reverse menampilan susunan secara vertikal dari bawah ke atas (terbalik).<br>
+        kesimpulan skenario 4 adalah flex wrap digunakan karena item ini dapat membungkus ke baris/kolom baru ketika ruang tidak cukup atau sesuai dengan ruang yang ada, tergantung dengan nila yang dgunakan.<br>
+        1. nowrap : elemen anak akan dipaksa dalam 1 baris meskipun melebihi kontainer.<br>
+        2. wrap : jika elemen tidak muat akan otomatis akan membungkus ke baris bawah.<br>
+        3. wrap-reverse : sama dengan wrap namun pada item ini baris baru akan ditambah diaasnya.<br>
+        kesimpulan skenario 5 adalah flexbox diguakan untuk menyederhanakan kode agar lebih ringkas. penulisannya flex-flow: flex-direction flex-wrap. <br>
+        kesimpulan skenario 6 adalah justify-content digunakan untuk mengatur posisi item biasanya secara horizontal dalam flex container.
+    </p>
+</body>
+</html>

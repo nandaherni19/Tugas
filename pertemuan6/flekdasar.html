@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flexbox Kelas 2C</title>
+    <style>
+        /*infinacss*/
+        .container-awal{
+            display: flex;
+            background-color: aqua;
+            /*flex-direction: row;*/
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: center; */
+            align-content: space-around;
+            height: 300px;
+        }
+        .container-awal > div{
+            background-color: forestgreen;
+            font-size: 30px;
+            width: 100px;
+            border: #dfdfdf solid thin;
+        }
+        .container-dua {
+            display: flex;
+            align-content: stretch;
+            background-color: #ff8954;
+        }
+        .container-dua > div{
+           background-color: aquamarine;
+           font-size: 30px;
+           text-align: center;
+           width: 100px;
+           margin: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--container-->
+    <div class="container-awal">
+        <!--flexitems-->
+        <div><h1>1</h1></div>
+        <div><h3>2</h3></div>
+        <div>3</div>
+    </div>
+    <div class="container-dua">
+        <div style="order: 2;">4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div style="order: 2;">8</div>
+    </div>
+</body>
+</html>

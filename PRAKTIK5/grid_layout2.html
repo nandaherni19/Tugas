@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196f3;
+            padding: 20px;
+            grid-template-columns: 10px 500px 20px 10px;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+        }
+        .item{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div>kesimpulan kode : 
+            skenario 1: Dengan penggunaan properti grid-column-start: 1; dan grid-column-end: 3;, elemen pertama dalam grid akan membentang secara horizontal melintasi dua kolom. Ini memberikan efek bahwa item tersebut memiliki ukuran lebih besar dibanding item lainnya dalam satu baris. Teknik ini berguna untuk menonjolkan elemen tertentu dalam layout grid, seperti judul, gambar utama, atau informasi penting. Grid Layout secara otomatis menyesuaikan posisi item berikutnya agar tidak bertabrakan, menjadikan penataan tetap terstruktur dan responsif. <br>
+            skenario 2: Properti grid-template-columns menentukan jumlah dan lebar kolom pada grid. Nilai auto menyesuaikan dengan ukuran konten, sedangkan satuan tetap seperti px memberi ukuran pasti. Kombinasi nilai ini memengaruhi tampilan layout—semakin proporsional kombinasinya, semakin rapi tampilan elemen grid.
+        </div>
+    </div>
+</body>
+</html>
